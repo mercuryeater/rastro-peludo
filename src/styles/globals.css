@@ -3,3 +3,8 @@ body {
   margin: 0px;
   font-family: "Mohave", sans-serif;
 }
+
+.tout {
+  display: flex;
+  flex-direction: column;
+}
