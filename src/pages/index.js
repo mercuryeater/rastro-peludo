@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "@components/Header/Header";
 import Hero from "@components/Hero/Hero";
+import HomeCTA from "@/components/HomeCTA/HomeCTA";
 import Footer from "@components/Footer/Footer";
 import { Inter } from "next/font/google";
 
@@ -23,6 +24,7 @@ export default function Home() {
       </Head>
       <Header />
       <Hero title={homeTitle} />
+      <HomeCTA />
       {/* <Footer /> */}
     </div>
   );

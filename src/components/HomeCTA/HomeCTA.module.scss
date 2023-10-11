@@ -1,0 +1,113 @@
+@use "@styles/base";
+@import "@styles/mixins";
+
+.CTA {
+  background-color: base.$secondary-color;
+  border-radius: 30px 30px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  padding: 30px 0px;
+
+  &__text {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 280px;
+    margin: 0;
+  }
+
+  &__handIcon {
+    color: base.$complement-color;
+    font-size: 65px;
+    animation: floatingAnimation 2s infinite;
+  }
+
+  &__reportButton {
+    font-family: inherit;
+    font-size: 26px;
+    font-weight: 600;
+    background-color: base.$default-button;
+    border: none;
+    border-radius: 16px;
+    padding: 15px 30px;
+    cursor: pointer;
+    color: white;
+    transition: all 800ms ease-in-out alternate;
+
+    &:hover {
+      background-color: base.$hover-button;
+    }
+
+    &:active {
+      background-color: base.$active-button;
+      transform: scale(0.95);
+    }
+  }
+}
+
+@keyframes floatingAnimation {
+  0%,
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(90deg);
+  }
+}
+
+@include Tablet() {
+  .CTA {
+    &__text {
+      font-size: 36px;
+      font-weight: 600;
+      max-width: 800px;
+      margin-top: 20px;
+      padding: 0px 30px;
+    }
+
+    &__handIcon {
+      font-size: 85px;
+    }
+
+    &__reportButton {
+      font-size: 36px;
+      font-weight: 600;
+    }
+  }
+}
+
+@include Desktop() {
+  .CTA {
+    display: grid;
+    grid-template-columns:
+      1fr minmax(390px, 400px) minmax(90px, 400px) minmax(390px, 400px)
+      1fr;
+    &__text {
+      grid-column: 2 / 3;
+    }
+
+    &__handIcon {
+      transform: rotate(-90deg);
+      grid-column: 3 / 4;
+      place-self: center;
+    }
+
+    &__reportButton {
+      grid-column: 4 / 5;
+      width: fit-content;
+      justify-self: start;
+    }
+  }
+
+  @keyframes floatingAnimation {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+  }
+}
