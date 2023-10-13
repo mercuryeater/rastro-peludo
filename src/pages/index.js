@@ -25,7 +25,7 @@ export default function Home() {
       <Header />
       <Hero title={homeTitle} />
       <HomeCTA />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
