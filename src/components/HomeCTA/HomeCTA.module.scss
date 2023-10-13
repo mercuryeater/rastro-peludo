@@ -82,10 +82,13 @@
   .CTA {
     display: grid;
     grid-template-columns:
-      1fr minmax(390px, 400px) minmax(90px, 400px) minmax(390px, 400px)
+      1fr minmax(390px, 400px) minmax(100px, 400px) minmax(390px, 400px)
       1fr;
+
     &__text {
       grid-column: 2 / 3;
+      margin: 0;
+      padding: 0;
     }
 
     &__handIcon {

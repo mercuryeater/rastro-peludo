@@ -24,13 +24,7 @@ export default function Header() {
 
           <div className={style.Header__title}>
             <div className={style.Header__title__logo}>
-              <Image
-                className={style.Header__title__logo}
-                src="/paw.png"
-                alt="icon"
-                width={200}
-                height={200}
-              />
+              <Image src="/paw.png" alt="icon" width={200} height={200} />
             </div>
             <h1 className={style.Header__title__text}>RASTROPELUDO</h1>
           </div>

@@ -1,3 +1,83 @@
-.intro {
-  background-color: blue;
+@use "@styles/base";
+@import "@styles/mixins";
+
+.footer {
+  // background: rgb(246, 195, 174);
+  background: linear-gradient(0deg, base.$primary-color, base.$secondary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 50px 0px;
+
+  &__title {
+    display: flex;
+    gap: 15px;
+    justify-self: center;
+    align-items: center;
+    height: fit-content;
+
+    &__logo {
+      max-width: 75px;
+      margin-bottom: 5px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__text {
+      padding-top: 6px;
+      line-height: 30px;
+      font-size: 36px;
+      font-weight: bold;
+      height: fit-content;
+    }
+  }
+
+  &__links {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@include Tablet() {
+  .footer {
+    &__title {
+      gap: 30px;
+      &__logo {
+        max-width: 100px;
+      }
+    }
+
+    &__links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+}
+
+@include Desktop() {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr minmax(320px, 600px) minmax(320px, 600px) 1fr;
+
+    &__title {
+      grid-column: 2/3;
+      justify-self: start;
+      margin-left: 60px;
+    }
+
+    &__links {
+      justify-self: end;
+    }
+  }
 }
