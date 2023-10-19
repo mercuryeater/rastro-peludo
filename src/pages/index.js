@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Header from "@components/Header/Header";
 import Hero from "@components/Hero/Hero";
-import HomeCTA from "@/components/HomeCTA/HomeCTA";
+import HomeCTA from "@/components/Home/HomeCTA/HomeCTA";
 import Footer from "@components/Footer/Footer";
+import Info from "@components/Home/Info/Info";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,6 +26,7 @@ export default function Home() {
       <Header />
       <Hero title={homeTitle} />
       <HomeCTA />
+      <Info />
       <Footer />
     </div>
   );
