@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import style from "./Header.module.scss";
 import { FiMenu, FiX } from "react-icons/fi";
 import { useState, useRef, useEffect } from "react";
@@ -22,12 +23,15 @@ export default function Header() {
             </button>
           )}
 
-          <div className={style.Header__title}>
+          {/* <Link href="/"> */}
+          <Link href="/" className={style.Header__title}>
             <div className={style.Header__title__logo}>
               <Image src="/paw.png" alt="icon" width={200} height={200} />
             </div>
             <h1 className={style.Header__title__text}>RASTROPELUDO</h1>
-          </div>
+          </Link>
+          {/* </Link> */}
+
           <span className={style.Header__links}>
             {links.map((link, index) => (
               <p key={index}>{link}</p>
