@@ -11,7 +11,9 @@ export default function ReportForm() {
     "Hora",
     "Lugar",
     "Descripción",
-    "Información relevante",
+    "Nombre de contacto",
+
+    "Teléfono",
   ];
 
   const sendForm = (e) => {
@@ -20,17 +22,34 @@ export default function ReportForm() {
   };
   return (
     <form className={style.Form} onSubmit={sendForm}>
+      <h3>¿Es un peludo visto o perdido?</h3>
+      <div className={style.radio}>
+        <label className={style} htmlFor="visto">
+          Visto
+          <input type="radio" id="visto" value="visto" name="postType" />
+        </label>
+      </div>
+      <div className={style.radio}>
+        <label className={style} htmlFor="perdido">
+          Perdido
+          <span></span>
+          <input type="radio" value="Perdido" name="postType" />
+        </label>
+      </div>
+
+      <input type="file" accept="image/*" name="images" />
       {inputFields.map((field, index) => (
         <React.Fragment key={index}>
           <label className={style.Form__label} htmlFor={field}>
             {field}
+
+            <input
+              className={style.Form__input}
+              type="text"
+              name={field}
+              maxLength="100"
+            />
           </label>
-          <input
-            className={style.Form__input}
-            type="text"
-            name={field}
-            maxLength="100"
-          />
         </React.Fragment>
       ))}
       {/* <input
