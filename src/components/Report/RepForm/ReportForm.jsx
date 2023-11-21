@@ -12,7 +12,6 @@ export default function ReportForm() {
     "Lugar",
     "Descripción",
     "Nombre de contacto",
-
     "Teléfono",
   ];
 
@@ -23,21 +22,49 @@ export default function ReportForm() {
   return (
     <form className={style.Form} onSubmit={sendForm}>
       <h3>¿Es un peludo visto o perdido?</h3>
-      <div className={style.radio}>
-        <label className={style} htmlFor="visto">
-          Visto
-          <input type="radio" id="visto" value="visto" name="postType" />
-        </label>
-      </div>
-      <div className={style.radio}>
-        <label className={style} htmlFor="perdido">
-          Perdido
-          <span></span>
-          <input type="radio" value="Perdido" name="postType" />
-        </label>
+      <div className={style.Form__radioContainer}>
+        <div className={style.Form__radio}>
+          <label className={style.Form__radio__label} htmlFor="visto">
+            <input
+              className={style.Form__radio__input}
+              type="radio"
+              id="visto"
+              value="visto"
+              name="postType"
+            />
+            <span className={style.Form__radio__checkmark} />
+            Visto
+          </label>
+        </div>
+        <div className={style.Form__radio}>
+          <label className={style.Form__radio__label} htmlFor="perdido">
+            <input
+              className={style.Form__radio__input}
+              type="radio"
+              id="perdido"
+              value="perdido"
+              name="postType"
+            />
+            <span className={style.Form__radio__checkmark} />
+            Perdido
+          </label>
+        </div>
       </div>
 
-      <input type="file" accept="image/*" name="images" />
+      {/*Aca delante este input seria chevere hacerlo mas estetico
+          con una imagen de fondo y que permita drag and drop  */}
+      <label htmlFor="images">
+        Fotos del peludo
+        <input
+          className={style.Form__inputImage}
+          id="images"
+          name="images"
+          type="file"
+          accept="image/*"
+          required
+        />
+      </label>
+
       {inputFields.map((field, index) => (
         <React.Fragment key={index}>
           <label className={style.Form__label} htmlFor={field}>
@@ -48,6 +75,7 @@ export default function ReportForm() {
               type="text"
               name={field}
               maxLength="100"
+              required
             />
           </label>
         </React.Fragment>
@@ -60,14 +88,19 @@ export default function ReportForm() {
         maxLength="100"
         required
       /> */}
-      {/* <textarea
-        className={style.Form__input}
-        type="text"
-        placeholder="Tell me, how can I help you?"
-        name="message"
-        maxLength="2000"
-        required
-      /> */}
+      <label className={style.Form__label} htmlFor="descripcion">
+        Descripción
+        <textarea
+          className={style.Form__textArea}
+          type="text"
+          placeholder="¿Cómo pasó todo?"
+          id="descripcion"
+          name="descripcion"
+          maxLength="2000"
+          required
+        />
+      </label>
+
       <button className={style.Form__btn} type="submit">
         ENVIAR REPORTE
       </button>
