@@ -1,0 +1,132 @@
+@use "@styles/base";
+@import "@styles/mixins";
+
+.Content {
+  background-color: base.$secondary-color;
+  border-radius: 30px 30px 0px 0px;
+  padding: 30px;
+
+  &__title {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  &__radioContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    max-width: 400px;
+    justify-items: center;
+    margin: 20px auto;
+  }
+
+  &__radio {
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    &__label {
+      display: flex;
+      align-items: baseline;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    &__label:hover &__checkmark {
+      background-color: base.$secondary-color;
+      outline-offset: -4px;
+      outline: 4px solid base.$background;
+    }
+
+    &__input {
+      display: none;
+    }
+
+    &__input:checked + &__checkmark {
+      background-color: base.$default-button;
+      outline-offset: -4px;
+      outline: 4px solid base.$background;
+    }
+
+    &__checkmark {
+      display: flex;
+      height: 22px;
+      width: 22px;
+      border-radius: 50%;
+      background-color: base.$background;
+      margin-right: 5px;
+    }
+  }
+}
+
+.Posts {
+  display: grid;
+  gap: 30px;
+}
+
+.Post {
+  background-color: base.$background;
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  width: 100%;
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px 18px 0px 0px;
+  }
+
+  &__text {
+    padding: 17px 20px;
+  }
+
+  &__specColor {
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    gap: 8px;
+
+    h3 {
+      display: block;
+      font-weight: inherit;
+      margin: 0;
+    }
+  }
+
+  &__address {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0px;
+  }
+
+  &__time {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    gap: 8px;
+
+    h3 {
+      display: inline-block;
+      font-weight: inherit;
+      margin: 0;
+    }
+  }
+
+  hr {
+    margin: 10px 0px;
+  }
+}
+
+@include Tablet {
+  .Posts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@include Desktop {
+  .Posts {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
