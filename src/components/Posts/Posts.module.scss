@@ -5,9 +5,61 @@
   background-color: base.$secondary-color;
   border-radius: 30px 30px 0px 0px;
   padding: 30px;
+  display: grid;
+  gap: 30px;
 }
 
 .Post {
   background-color: base.$background;
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px 18px 0px 0px;
+  }
+
+  &__text {
+    padding: 17px 20px;
+  }
+
+  &__specColor {
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    gap: 10px;
+
+    h3 {
+      display: inline-block;
+      font-weight: inherit;
+      margin: 0;
+    }
+  }
+
+  &__address {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0px;
+  }
+
+  &__time {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+
+    h3 {
+      display: inline-block;
+      font-weight: inherit;
+      margin: 0;
+    }
+  }
+
+  hr {
+    margin: 10px 0px;
+  }
 }
 

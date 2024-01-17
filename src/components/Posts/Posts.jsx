@@ -29,12 +29,20 @@ export default function Posts() {
     <div className={s.Posts}>
       {mockPosts.map((post, i) => (
         <div className={s.Post} key={i}>
-          <Image src={post.foto} alt="a random dog" width={500} height={500} />
-          <h3>{post.especie}</h3>
-          <h3>{post.color}</h3>
-          <h3>{post.direccion}</h3>
-          <h3>{post.fecha}</h3>
-          <h3>{post.hora}</h3>
+          <Image className={s.Post__img} src={post.foto} alt="a random dog" width={500} height={500} />
+          <div className={s.Post__text}>
+            <span className={s.Post__specColor}>
+              <h3>{post.especie}</h3>
+              <h3>- {post.color}</h3>
+            </span>
+            <hr />
+            <h3 className={s.Post__address}>{post.direccion}</h3>
+            <hr />
+            <span className={s.Post__time}>
+              <h3>{post.fecha}</h3>
+              <h3>- {post.hora}</h3>
+            </span>
+          </div>
         </div>
         ))}
 
