@@ -7,7 +7,11 @@ import Menu from "@components/Header/Menu/Menu";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
-  const links = ["Publicaciones", "Cómo funciona", "Nosotros"];
+  const links = {
+    Publicaciones: "/posts",
+    "Cómo funciona": "/how",
+    Nosotros: "/us",
+  };
 
   return (
     <>
@@ -23,18 +27,18 @@ export default function Header() {
             </button>
           )}
 
-          {/* <Link href="/"> */}
           <Link href="/" className={style.Header__title}>
             <div className={style.Header__title__logo}>
               <Image src="/paw.png" alt="icon" width={200} height={200} />
             </div>
             <h1 className={style.Header__title__text}>RASTROPELUDO</h1>
           </Link>
-          {/* </Link> */}
 
           <span className={style.Header__links}>
-            {links.map((link, index) => (
-              <p key={index}>{link}</p>
+            {Object.entries(links).map(([key, value], index) => (
+              <Link key={index} href={value} className={style.Header__title}>
+                <p>{key}</p>
+              </Link>
             ))}
           </span>
         </div>
