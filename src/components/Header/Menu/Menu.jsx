@@ -1,5 +1,6 @@
-import style from "./Menu.module.scss";
+import Link from "next/link";
 import { useRef, useEffect } from "react";
+import style from "./Menu.module.scss";
 
 export default function Menu({ links, setShowMenu }) {
   const menuRef = useRef();
@@ -18,8 +19,10 @@ export default function Menu({ links, setShowMenu }) {
 
   return (
     <div ref={menuRef} className={style.Menu}>
-      {links.map((link, index) => (
-        <p key={index}>{link}</p>
+      {Object.entries(links).map(([key, value], i) => (
+        <Link key={i} href={value}>
+          <p>{key}</p>
+        </Link>
       ))}
     </div>
   );
