@@ -1,6 +1,4 @@
-import Image from "next/image";
 import style from "./Info.module.scss";
-import infoImage from "@assets/PARKPETS.png";
 
 export default function Info() {
   // Atribuciones de las imagenes para poner en el footer
@@ -14,10 +12,14 @@ export default function Info() {
 
   return (
     <div className={style.Info}>
-      <h3
-        className={style.Info__text}
-        dangerouslySetInnerHTML={{ __html: text }}
-      ></h3>
+      <h3 className={style.Info__text}>
+        ¿Viste un peludo solitario por la ciudad y no pudiste ayudarlo en ese
+        momento?
+      </h3>
+      <h3 className={style.Info__text}>
+        Reporta esos encuentros y contribuye a la creación de un rastro que
+        conduzca a su rescate.
+      </h3>
       <div className={style.Info__img}></div>
     </div>
   );
