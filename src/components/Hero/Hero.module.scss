@@ -1,0 +1,106 @@
+@import "@styles/mixins";
+
+.Hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  background-image: url("../../assets/PAWS.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 384px;
+
+  &__title {
+    grid-row: span 2;
+    font-size: 32px;
+    place-self: center;
+    max-width: 144px;
+  }
+
+  &__image {
+    background-image: url("../../assets/GIRL1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    grid-row: span 2;
+  }
+}
+
+@include Tablet() {
+  .Hero {
+    background-image: url("../../assets/PAWS.svg");
+    height: 600px;
+    background-size: cover;
+    background-position: left;
+
+    &__title {
+      font-size: 56px;
+      max-width: 190px;
+    }
+
+    section {
+      margin: 20px;
+    }
+
+    &__image {
+      background-image: url("../../assets/BOY.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: left;
+      grid-row: span 1;
+    }
+
+    &__image2 {
+      background-image: url("../../assets/GIRL2.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+  }
+}
+
+@include Desktop() {
+  .Hero {
+    max-width: 1450px;
+    width: 95%;
+    align-self: center;
+    background-image: url("../../assets/PAWS2.svg");
+    height: 629px;
+    background-size: cover;
+    grid-template-columns: minmax(300px, 1fr) repeat(3, minmax(180px, 230px));
+    margin: 10px auto;
+
+    &__title {
+      font-size: 64px;
+      max-width: 500px;
+      margin-left: 90px;
+      margin-right: 50px;
+    }
+
+    section {
+      margin: 0px;
+    }
+
+    &__image {
+      background-position: bottom;
+    }
+
+    &__image2 {
+      background-position: top;
+      grid-column: 3 / 4;
+      margin: 0px;
+    }
+
+    &__image3 {
+      background-image: url("../../assets/GIRL1.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+      grid-column: 4 / 5;
+      grid-row: 1 / 2;
+      margin: 20px;
+    }
+  }
+}

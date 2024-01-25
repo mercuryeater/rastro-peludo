@@ -3,3 +3,16 @@ body {
   margin: 0px;
   font-family: "Mohave", sans-serif;
 }
+
+.tout {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  all: unset;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}

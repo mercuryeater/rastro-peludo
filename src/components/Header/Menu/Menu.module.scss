@@ -1,0 +1,45 @@
+@use "@styles/base";
+@import "@styles/mixins";
+
+.Menu {
+  background: rgb(246, 195, 174);
+  background: linear-gradient(
+    90deg,
+    base.$primary-color,
+    base.$secondary-color
+  );
+  display: flex;
+  flex-direction: column;
+
+  p {
+    border-top: 1px solid base.$complement-color;
+    font-size: 25px;
+    font-weight: 500;
+    white-space: nowrap; /* Prevent text from wrapping */
+    padding: 20px 45px;
+    padding-right: 0px;
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+    &:last-child {
+      border-bottom: 1px solid base.$complement-color;
+    }
+
+    &:hover {
+      background-color: base.$middle-color;
+      padding-left: 70px;
+    }
+
+    &:active {
+      background-color: base.$complement-color-transp;
+      transition: all 0.05s ease-in-out;
+    }
+  }
+}
+
+@include Desktop() {
+  .Menu {
+    display: none;
+  }
+}
