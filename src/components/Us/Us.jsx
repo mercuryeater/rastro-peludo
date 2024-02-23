@@ -3,6 +3,8 @@ import s from "./Us.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+
 import profile from "@assets/me.jpg";
 
 export default function Us() {
@@ -48,6 +50,9 @@ export default function Us() {
           </Link>
           <Link href="https://github.com/mercuryeater" target="_blank">
             <FaGithub className={s.contact__links__link} />
+          </Link>
+          <Link href="mailto: federicoc03@gmail.com" target="_blank">
+            <IoMdMail className={s.contact__links__link} />
           </Link>
         </span>
       </div>
