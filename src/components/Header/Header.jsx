@@ -9,7 +9,7 @@ export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const links = {
     Publicaciones: "/posts",
-    "Cómo funciona": "/how",
+    // "Cómo funciona": "/how",
     Nosotros: "/us",
   };
 
