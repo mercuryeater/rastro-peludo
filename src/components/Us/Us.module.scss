@@ -1,7 +1,52 @@
 @use "@styles/base";
 @import "@styles/mixins";
 
-
 .container {
-  padding: 30px;
+  padding: 0px 30px;
+}
+
+.profile {
+  border-radius: 50%;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  &__links {
+    margin-top: 15px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+
+    &__link {
+      font-size: 25px;
+      color: base.$default-button;
+      cursor: pointer;
+    }
+
+    &__link:hover {
+      scale: 1.2;
+      color: base.$hover-button;
+    }
+
+    &__link:active {
+      color: base.$active-button;
+      scale: 1.1;
+    }
+  }
+}
+
+@include Tablet() {
+  .container {
+    max-width: 860px;
+    margin: 30px auto;
+  }
+}
+
+@include Desktop() {
+  .container {
+    max-width: 1200px;
+  }
 }

@@ -1,7 +1,9 @@
 import React from "react";
 import s from "./Us.module.scss";
 import Link from "next/link";
-import { FaLinkedin } from "react-icons/fa";
+import Image from "next/image";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import profile from "@assets/me.jpg";
 
 export default function Us() {
   return (
@@ -28,10 +30,27 @@ export default function Us() {
         Empatía hacia los dueños preocupados y los animales extraviados.
       </p>
       <h2>Contacto</h2>
-      <p>Escribeme un mensaje en LinkedIn si quieres colaborar: </p>
-      <Link href="https://www.linkedin.com/in/federcor/" target="_blank">
-        <FaLinkedin />
-      </Link>
+      <p>
+        Por ahora solo estoy yo trabajando en la página pero si tienes forma de
+        ayudar o quieres saber cómo podrías hacerlo no dudes en escribirme.
+      </p>
+      <div className={s.contact}>
+        <Image
+          className={s.profile}
+          src={profile}
+          alt="Foto autor"
+          width={110}
+          height={110}
+        />
+        <span className={s.contact__links}>
+          <Link href="https://www.linkedin.com/in/federcor/" target="_blank">
+            <FaLinkedin className={s.contact__links__link} />
+          </Link>
+          <Link href="https://github.com/mercuryeater" target="_blank">
+            <FaGithub className={s.contact__links__link} />
+          </Link>
+        </span>
+      </div>
 
       <p></p>
     </main>
