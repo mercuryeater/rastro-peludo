@@ -13,16 +13,28 @@ export default function Details() {
   return (
     <main className={s.container}>
       {screenSize.width < 481 ? <MobileHeader /> : <Header />}
-      {/* Aca iria un menu de ir a la página anterior y compartir publicación */}
       <Image src={dog1} alt="dog" />
       <div className={s.container__info}>
         {isSeen ? (
-          <p>Visto</p>
+          <h1>Perro - Cafe y negro</h1>
         ) : (
           // aca reemplazar elementos dependiendo si es visto o perdido
-          <p>Perdido</p>
+          <h1>Moro</h1>
         )}
         <hr />
+        {isSeen ? null : (
+          <div className={s.lostInfo}>
+            <p>Perro - Sabueso</p>
+            <p>Café y negro - 4 años</p> <hr />
+          </div>
+        )}
+        <div className={s.pathInfo}>
+          <p>Visto por ultima vez en:</p>
+          <h2>Cra 19A #127 - 50</h2>
+          <p>En la fecha - hora:</p>
+          <h2>25/11/2023</h2>
+          <hr />
+        </div>
         <div className={s.description}>
           <h3>Descripción</h3>
           <p>
@@ -61,6 +73,7 @@ export default function Details() {
         </div>
 
         <hr />
+        <div className={s.footerIntersection}></div>
       </div>
     </main>
   );
