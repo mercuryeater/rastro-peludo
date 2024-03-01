@@ -1,11 +1,11 @@
 import { useState, useRef } from "react";
-import s from "./Header.module.scss";
+import s from "./DetailsHeader.module.scss";
 import { useRouter } from "next/router";
 import { FaShareFromSquare } from "react-icons/fa6";
 import { IoChevronBack } from "react-icons/io5";
 import { IoMdShare } from "react-icons/io";
 
-export default function Header() {
+export default function MobileDetailsHeader() {
   const router = useRouter();
 
   const [sharing, setSharing] = useState(false);
