@@ -1,16 +1,18 @@
-import Header from "./Header/Header";
+import MobileHeader from "./Header/DetailsHeader";
+import Header from "@components/Header/Header";
 import s from "./Details.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import dog1 from "@assets/pets/dog1.jpg";
+import useScreenSize from "@hooks/useScreenSize";
 
 export default function Details() {
   const isSeen = false;
+  const screenSize = useScreenSize();
 
   return (
     <main className={s.container}>
-      {/* {isMobile ? <h1>Mobile View</h1> : <h1>Desktop View</h1>} */}
-      <Header />
+      {screenSize.width < 481 ? <MobileHeader /> : <Header />}
       {/* Aca iria un menu de ir a la página anterior y compartir publicación */}
       <Image src={dog1} alt="dog" />
       <div className={s.container__info}>
