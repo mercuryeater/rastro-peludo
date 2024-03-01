@@ -1,0 +1,27 @@
+@use "@styles/base";
+@import "@styles/mixins";
+
+.header {
+  background: rgb(246, 195, 174);
+  background: linear-gradient(
+    90deg,
+    base.$primary-color,
+    base.$secondary-color
+  );
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+  color: base.$complement-color;
+  font-size: 70px;
+}
+
+.back {
+  cursor: pointer;
+}
+
+.share {
+  cursor: pointer;
+  font-size: 60px;
+}
