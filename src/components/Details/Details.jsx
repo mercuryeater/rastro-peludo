@@ -10,16 +10,24 @@ export default function Details() {
   const isSeen = false;
   const screenSize = useScreenSize();
 
+  function publishClue(event) {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+    const clue = Object.fromEntries(formData);
+    console.log("Clue published: " + JSON.stringify(clue));
+  }
+
   return (
     <main className={s.container}>
       {screenSize.width < 481 ? <MobileHeader /> : <Header />}
       <Image src={dog1} alt="dog" />
       <div className={s.container__info}>
         {isSeen ? (
-          <h1>Perro - Cafe y negro</h1>
+          <h1 className={s.title}>Perro - Cafe y negro</h1>
         ) : (
           // aca reemplazar elementos dependiendo si es visto o perdido
-          <h1>Moro</h1>
+          <h1 className={s.title}>Moro</h1>
         )}
         <hr />
         {isSeen ? null : (
@@ -32,7 +40,7 @@ export default function Details() {
           <p>Visto por ultima vez en:</p>
           <h2>Cra 19A #127 - 50</h2>
           <p>En la fecha - hora:</p>
-          <h2>25/11/2023</h2>
+          <h2>25/11/2023 - 10:30</h2>
           <hr />
         </div>
         <div className={s.description}>
@@ -56,14 +64,14 @@ export default function Details() {
 
         <div className={s.clues}>
           <h3>Pistas</h3>
-          <form className={s.clues__form} action="">
+          <form className={s.clues__form} onSubmit={publishClue}>
             <textarea
               type="text"
-              name="clues"
+              name="clue"
               cols="30"
               rows="10"
-              placeholder="Dejar pista sobre este peludo"
-              maxLength="1000"
+              placeholder="Dejar pista sobre este peludo..."
+              maxLength="500"
               required
             />
             <button className={s.btnClue} type="submit">
