@@ -141,16 +141,55 @@
 
 .footerIntersection {
   height: 40px;
-  // This margin counters container padding
-  margin: 0px -20px;
   background: linear-gradient(0deg, base.$secondary-color, base.$background);
 }
 
 @media (min-width: 780px) {
   .container {
     &__info {
+      padding: 0 50px;
       display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
     }
+
+    hr {
+      grid-column: 1 / 4;
+    }
+  }
+
+  .title {
+    grid-column: 1 / 3;
+    grid-row: auto;
+  }
+
+  .lostInfo {
+    grid-column: 3/4;
+    grid-row: auto;
+  }
+
+  .pathInfo {
+    grid-column: 1/2;
+    grid-row: 3;
+  }
+
+  .description {
+    grid-column: 1/4;
+    grid-row: auto;
+  }
+
+  .contact {
+    grid-column: 2/3;
+    grid-row: 3;
+  }
+
+  .contactSeen {
+    grid-column: 3/4;
+  }
+
+  .clues {
+    grid-column: 1/4;
+    grid-row: auto;
   }
 }
 
