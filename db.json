@@ -1,0 +1,504 @@
+{
+  "seen": [
+    {
+      "id": 1,
+      "especie": "Perro",
+      "foto": "https://images.dog.ceo/breeds/terrier-westhighland/n02098286_763.jpg",
+      "color": "Blanco",
+      "seenAt": "Cra 19A # 127",
+      "date": "25/11/2023",
+      "time": "10:30",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. ",
+      "contact": {
+        "name": "Pepito Perez",
+        "email": "pepito@exaample.com",
+        "phone": "+56987654321"
+      },
+      "clues": [
+        {
+          "id": 1,
+          "name": "Dtective pistas",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        },
+        {
+          "id": 2,
+          "name": "Un rastreador",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "especie": "Perro",
+      "foto": "https://images.dog.ceo/breeds/schnauzer-miniature/n02097047_674.jpg",
+      "color": "Gris",
+      "seenAt": "Cra 28 # 70",
+      "date": "30/12/2023",
+      "time": "15:30",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. ",
+      "contact": {
+        "name": "Pepito Perez",
+        "email": "pepito@exaample.com",
+        "phone": "+56987654321"
+      },
+      "clues": [
+        {
+          "id": 1,
+          "name": "Dtective pistas",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        },
+        {
+          "id": 2,
+          "name": "Un rastreador",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "especie": "Gato",
+      "foto": "https://cdn2.thecatapi.com/images/a4h.jpg",
+      "color": "Blanco y Gris",
+      "seenAt": "Cra 19A # 127",
+      "date": "25/11/2023",
+      "time": "10:30",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. ",
+      "contact": {
+        "name": "Pepito Perez",
+        "email": "pepito@exaample.com",
+        "phone": "+56987654321"
+      },
+      "clues": [
+        {
+          "id": 1,
+          "name": "Dtective pistas",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        },
+        {
+          "id": 2,
+          "name": "Un rastreador",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "especie": "Gato",
+      "foto": "https://cdn2.thecatapi.com/images/e1t.jpg",
+      "color": "Negro",
+      "seenAt": "Cra 19A # 127",
+      "date": "25/11/2023",
+      "time": "10:30",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. ",
+      "contact": {
+        "name": "Pepito Perez",
+        "email": "pepito@exaample.com",
+        "phone": "+56987654321"
+      }
+    },
+    {
+      "id": 10,
+      "especie": "Perro",
+      "foto": "https://images.dog.ceo/breeds/terrier-westhighland/n02098286_763.jpg",
+      "color": "Blanco",
+      "seenAt": "Cra 19A # 127",
+      "date": "25/11/2023",
+      "time": "10:30",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. ",
+      "contact": {
+        "name": "Pepito Perez",
+        "email": "pepito@exaample.com",
+        "phone": "+56987654321"
+      },
+      "clues": [
+        {
+          "id": 1,
+          "name": "Dtective pistas",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        },
+        {
+          "id": 2,
+          "name": "Un rastreador",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "especie": "Perro",
+      "foto": "https://images.dog.ceo/breeds/schnauzer-miniature/n02097047_674.jpg",
+      "color": "Gris",
+      "seenAt": "Cra 28 # 70",
+      "date": "30/12/2023",
+      "time": "15:30",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. ",
+      "contact": {
+        "name": "Pepito Perez",
+        "email": "pepito@exaample.com",
+        "phone": "+56987654321"
+      },
+      "clues": [
+        {
+          "id": 1,
+          "name": "Dtective pistas",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        },
+        {
+          "id": 2,
+          "name": "Un rastreador",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "especie": "Gato",
+      "foto": "https://cdn2.thecatapi.com/images/a4h.jpg",
+      "color": "Blanco y Gris",
+      "seenAt": "Cra 19A # 127",
+      "date": "25/11/2023",
+      "time": "10:30",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. ",
+      "contact": {
+        "name": "Pepito Perez",
+        "email": "pepito@exaample.com",
+        "phone": "+56987654321"
+      },
+      "clues": [
+        {
+          "id": 1,
+          "name": "Dtective pistas",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        },
+        {
+          "id": 2,
+          "name": "Un rastreador",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "especie": "Gato",
+      "foto": "https://cdn2.thecatapi.com/images/e1t.jpg",
+      "color": "Negro",
+      "seenAt": "Cra 19A # 127",
+      "date": "25/11/2023",
+      "time": "10:30",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. ",
+      "contact": {
+        "name": "Pepito Perez",
+        "email": "pepito@exaample.com",
+        "phone": "+56987654321"
+      }
+    }
+  ],
+  "lost": [
+    {
+      "id": 5,
+      "name": "Moro",
+      "especie": "Perro",
+      "race": "Criollo",
+      "edad": "1 años",
+      "foto": "https://images.dog.ceo/breeds/terrier-westhighland/n02098286_763.jpg",
+      "color": "Blanco",
+      "seenAt": "Cra 19A # 127",
+      "date": "25/11/2023",
+      "time": "10:30",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. ",
+      "contact": {
+        "name": "Pepito Perez",
+        "email": "pepito@exaample.com",
+        "phone": "+56987654321"
+      },
+      "clues": [
+        {
+          "id": 1,
+          "name": "Dtective pistas",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        },
+        {
+          "id": 2,
+          "name": "Un rastreador",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Mono",
+      "especie": "Perro",
+      "race": "Criollo",
+      "edad": "4 años",
+      "foto": "https://images.dog.ceo/breeds/terrier-westhighland/n02098286_763.jpg",
+      "color": "Blanco",
+      "seenAt": "Cra 19A # 127",
+      "date": "25/11/2023",
+      "time": "10:30",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. ",
+      "contact": {
+        "name": "Pepito Perez",
+        "email": "pepito@exaample.com",
+        "phone": "+56987654321"
+      },
+      "clues": [
+        {
+          "id": 1,
+          "name": "Dtective pistas",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        },
+        {
+          "id": 2,
+          "name": "Un rastreador",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Luna",
+      "especie": "Gato",
+      "race": "Siames",
+      "edad": "2 años",
+      "foto": "https://cdn2.thecatapi.com/images/MTYwMDkyOQ.jpg",
+      "color": "Gris",
+      "seenAt": "Cra 20B # 128",
+      "date": "26/11/2023",
+      "time": "11:30",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus.",
+      "contact": {
+        "name": "Juanita Perez",
+        "email": "juanita@example.com",
+        "phone": "+57123456789"
+      },
+      "clues": [
+        {
+          "id": 1,
+          "name": "Dtective pistas",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        },
+        {
+          "id": 2,
+          "name": "Un rastreador",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Laika",
+      "especie": "Gato",
+      "race": "Siames",
+      "edad": "2 años",
+      "foto": "https://cdn2.thecatapi.com/images/MTYwMDkyOQ.jpg",
+      "color": "Gris",
+      "seenAt": "Cll 60B # 28",
+      "date": "01/04/2024",
+      "time": "18:30",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus.",
+      "contact": {
+        "name": "Camilo Perez",
+        "email": "ceperez@example.com",
+        "phone": "+57123456789"
+      },
+      "clues": [
+        {
+          "id": 1,
+          "name": "Dtective pistas",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        },
+        {
+          "id": 2,
+          "name": "Un rastreador",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Bella",
+      "especie": "Gato",
+      "race": "Persa",
+      "edad": "3 años",
+      "foto": "https://cdn2.thecatapi.com/images/d_RzH-Zft.jpg",
+      "color": "Blanco",
+      "seenAt": "Cra 21C # 129",
+      "date": "27/11/2023",
+      "time": "12:30",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus.",
+      "contact": {
+        "name": "Carlos Gomez",
+        "email": "carlos@example.com",
+        "phone": "+57123456790"
+      },
+      "clues": [
+        {
+          "id": 1,
+          "name": "Dtective pistas",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        },
+        {
+          "id": 2,
+          "name": "Un rastreador",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Moro",
+      "especie": "Perro",
+      "race": "Criollo",
+      "edad": "1 años",
+      "foto": "https://images.dog.ceo/breeds/terrier-westhighland/n02098286_763.jpg",
+      "color": "Blanco",
+      "seenAt": "Cra 19A # 127",
+      "date": "25/11/2023",
+      "time": "10:30",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. ",
+      "contact": {
+        "name": "Pepito Perez",
+        "email": "pepito@exaample.com",
+        "phone": "+56987654321"
+      },
+      "clues": [
+        {
+          "id": 1,
+          "name": "Dtective pistas",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        },
+        {
+          "id": 2,
+          "name": "Un rastreador",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Mono",
+      "especie": "Perro",
+      "race": "Criollo",
+      "edad": "4 años",
+      "foto": "https://images.dog.ceo/breeds/terrier-westhighland/n02098286_763.jpg",
+      "color": "Blanco",
+      "seenAt": "Cra 19A # 127",
+      "date": "25/11/2023",
+      "time": "10:30",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. ",
+      "contact": {
+        "name": "Pepito Perez",
+        "email": "pepito@exaample.com",
+        "phone": "+56987654321"
+      },
+      "clues": [
+        {
+          "id": 1,
+          "name": "Dtective pistas",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        },
+        {
+          "id": 2,
+          "name": "Un rastreador",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Luna",
+      "especie": "Gato",
+      "race": "Siames",
+      "edad": "2 años",
+      "foto": "https://cdn2.thecatapi.com/images/MTYwMDkyOQ.jpg",
+      "color": "Gris",
+      "seenAt": "Cra 20B # 128",
+      "date": "26/11/2023",
+      "time": "11:30",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus.",
+      "contact": {
+        "name": "Juanita Perez",
+        "email": "juanita@example.com",
+        "phone": "+57123456789"
+      },
+      "clues": [
+        {
+          "id": 1,
+          "name": "Dtective pistas",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        },
+        {
+          "id": 2,
+          "name": "Un rastreador",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Laika",
+      "especie": "Gato",
+      "race": "Siames",
+      "edad": "2 años",
+      "foto": "https://cdn2.thecatapi.com/images/MTYwMDkyOQ.jpg",
+      "color": "Gris",
+      "seenAt": "Cll 60B # 28",
+      "date": "01/04/2024",
+      "time": "18:30",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus.",
+      "contact": {
+        "name": "Camilo Perez",
+        "email": "ceperez@example.com",
+        "phone": "+57123456789"
+      },
+      "clues": [
+        {
+          "id": 1,
+          "name": "Dtective pistas",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        },
+        {
+          "id": 2,
+          "name": "Un rastreador",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Bella",
+      "especie": "Gato",
+      "race": "Persa",
+      "edad": "3 años",
+      "foto": "https://cdn2.thecatapi.com/images/d_RzH-Zft.jpg",
+      "color": "Blanco",
+      "seenAt": "Cra 21C # 129",
+      "date": "27/11/2023",
+      "time": "12:30",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus.",
+      "contact": {
+        "name": "Carlos Gomez",
+        "email": "carlos@example.com",
+        "phone": "+57123456790"
+      },
+      "clues": [
+        {
+          "id": 1,
+          "name": "Dtective pistas",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        },
+        {
+          "id": 2,
+          "name": "Un rastreador",
+          "clue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod tortor vitae egestas. Aenean tellus metus. "
+        }
+      ]
+    }
+  ]
+}
+
+// cats found in:
+// https://api.thecatapi.com/v1/images/search
+
+// Dogs found in:
+// https://dog.ceo/dog-api/
