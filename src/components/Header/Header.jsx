@@ -18,11 +18,11 @@ export default function Header() {
       <header className={style.Header}>
         <div className={style.Header__content}>
           {showMenu ? (
-            <button type="buttton" onClick={() => setShowMenu(false)}>
+            <button type="button" onClick={() => setShowMenu(false)}>
               <FiX className={style.Header__menu} />
             </button>
           ) : (
-            <button type="buttton" onClick={() => setShowMenu(true)}>
+            <button type="button" onClick={() => setShowMenu(true)}>
               <FiMenu className={style.Header__menu} />
             </button>
           )}
