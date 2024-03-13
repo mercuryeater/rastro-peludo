@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Cards from "./Cards/Cards.jsx";
 import dog1 from "@assets/pets/dog1.jpg";
 import dog2 from "@assets/pets/dog2.jpg";
@@ -8,6 +8,8 @@ import db from "../../db/db.json";
 
 export default function Posts() {
   const [postType, setPostType] = useState("");
+  const [posts, setPosts] = useState([]);
+
   // console.log(db);
 
   const handleInputChange = (event) => {
@@ -49,6 +51,16 @@ export default function Posts() {
     },
   ];
 
+  useEffect(() => {
+    if (postType === "vistos") {
+      setPosts(db.seen);
+      console.log(posts);
+    } else if (postType === "perdidos") {
+      setPosts(db.lost);
+      console.log(posts);
+    }
+  }, [postType]);
+
   return (
     <main className={s.Content}>
       <h3 className={s.Content__title}>¿Qué sección de Peludos quieres ver?</h3>
@@ -86,9 +98,15 @@ export default function Posts() {
       {postType === "perdidos" && <h1>Perdido</h1>}
 
       <div className={s.Posts}>
-        {mockPosts.map((post, i) => (
+        {posts
+          ? posts.map((post, i) => (
+              <Cards key={i} post={post} type={postType} />
+            ))
+          : null}
+
+        {/* {posts.map((post, i) => (
           <Cards key={i} post={post} type={postType} />
-        ))}
+        ))} */}
       </div>
     </main>
   );
