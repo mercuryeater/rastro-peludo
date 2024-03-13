@@ -1,9 +1,21 @@
 import Image from "next/image";
+import { useState, useEffect } from "react";
+import Cards from "./Cards/Cards.jsx";
 import dog1 from "@assets/pets/dog1.jpg";
 import dog2 from "@assets/pets/dog2.jpg";
 import s from "./Posts.module.scss";
+import db from "../../db/db.json";
 
 export default function Posts() {
+  const [postType, setPostType] = useState("");
+  const [posts, setPosts] = useState([]);
+
+  // console.log(db);
+
+  const handleInputChange = (event) => {
+    setPostType(event.target.value);
+  };
+
   const mockPosts = [
     {
       especie: "Perro",
@@ -39,6 +51,16 @@ export default function Posts() {
     },
   ];
 
+  useEffect(() => {
+    if (postType === "vistos") {
+      setPosts(db.seen);
+      console.log(posts);
+    } else if (postType === "perdidos") {
+      setPosts(db.lost);
+      console.log(posts);
+    }
+  }, [postType]);
+
   return (
     <main className={s.Content}>
       <h3 className={s.Content__title}>¿Qué sección de Peludos quieres ver?</h3>
@@ -49,8 +71,9 @@ export default function Posts() {
               className={s.Content__radio__input}
               type="radio"
               id="visto"
-              value="visto"
+              value="vistos"
               name="postType"
+              onChange={handleInputChange}
             />
             <span className={s.Content__radio__checkmark} />
             Vistos
@@ -62,42 +85,28 @@ export default function Posts() {
               className={s.Content__radio__input}
               type="radio"
               id="perdido"
-              value="perdido"
+              value="perdidos"
               name="postType"
+              onChange={handleInputChange}
             />
             <span className={s.Content__radio__checkmark} />
             Perdidos
           </label>
         </div>
       </div>
+      {postType === "vistos" && <h1>Visto</h1>}
+      {postType === "perdidos" && <h1>Perdido</h1>}
 
       <div className={s.Posts}>
-        {mockPosts.map((post, i) => (
-          <div className={s.Post} key={i}>
-            <Image
-              className={s.Post__img}
-              src={post.foto}
-              alt="a random dog"
-              width={500}
-              height={500}
-            />
-            <div className={s.Post__text}>
-              <span className={s.Post__specColor}>
-                <h3>
-                  {post.especie} - {post.color}
-                </h3>
-              </span>
-              <hr />
-              <h3 className={s.Post__address}>{post.direccion}</h3>
-              <hr />
-              <span className={s.Post__time}>
-                <h3>
-                  {post.fecha} - {post.hora}
-                </h3>
-              </span>
-            </div>
-          </div>
-        ))}
+        {posts
+          ? posts.map((post, i) => (
+              <Cards key={i} post={post} type={postType} />
+            ))
+          : null}
+
+        {/* {posts.map((post, i) => (
+          <Cards key={i} post={post} type={postType} />
+        ))} */}
       </div>
     </main>
   );
