@@ -1,12 +1,13 @@
 import Image from "next/image";
 import s from "./Cards.module.scss";
+import Link from "next/link";
 
 export default function Cards({ post, type }) {
   // Si es tipo perdido se cambian unas cosas
   // Si es tipo visto otra
 
   return (
-    <div className={s.Post}>
+    <Link href={`/posts/${post.id}`} className={s.Post}>
       <Image
         className={s.Post__img}
         src={post.photo}
@@ -35,6 +36,6 @@ export default function Cards({ post, type }) {
           </h3>
         </span>
       </div>
-    </div>
+    </Link>
   );
 }
