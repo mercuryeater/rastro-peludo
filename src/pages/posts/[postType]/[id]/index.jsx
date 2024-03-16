@@ -1,9 +1,7 @@
 import Details from "@/components/Details/Details";
 import Footer from "@/components/Footer/Footer";
-import { useRouter } from "next/router";
 
-export default function Test() {
-  const router = useRouter();
+export default function DetailsPage() {
   return (
     <div>
       <Details />
