@@ -2,6 +2,7 @@
 @import "@styles/mixins";
 
 .Post {
+  cursor: pointer;
   background-color: base.$background;
   display: flex;
   flex-direction: column;

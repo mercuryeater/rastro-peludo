@@ -1,16 +1,13 @@
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import Cards from "./Cards/Cards.jsx";
 import dog1 from "@assets/pets/dog1.jpg";
 import dog2 from "@assets/pets/dog2.jpg";
 import s from "./Posts.module.scss";
-import db from "../../db/db.json";
+import db from "@db/db.json";
 
 export default function Posts() {
   const [postType, setPostType] = useState("");
   const [posts, setPosts] = useState([]);
-
-  // console.log(db);
 
   const handleInputChange = (event) => {
     setPostType(event.target.value);
@@ -52,12 +49,10 @@ export default function Posts() {
   ];
 
   useEffect(() => {
-    if (postType === "vistos") {
+    if (postType === "seen") {
       setPosts(db.seen);
-      console.log(posts);
-    } else if (postType === "perdidos") {
+    } else if (postType === "lost") {
       setPosts(db.lost);
-      console.log(posts);
     }
   }, [postType]);
 
@@ -71,7 +66,7 @@ export default function Posts() {
               className={s.Content__radio__input}
               type="radio"
               id="visto"
-              value="vistos"
+              value="seen"
               name="postType"
               onChange={handleInputChange}
             />
@@ -85,7 +80,7 @@ export default function Posts() {
               className={s.Content__radio__input}
               type="radio"
               id="perdido"
-              value="perdidos"
+              value="lost"
               name="postType"
               onChange={handleInputChange}
             />
@@ -94,8 +89,6 @@ export default function Posts() {
           </label>
         </div>
       </div>
-      {postType === "vistos" && <h1>Visto</h1>}
-      {postType === "perdidos" && <h1>Perdido</h1>}
 
       <div className={s.Posts}>
         {posts
@@ -103,10 +96,6 @@ export default function Posts() {
               <Cards key={i} post={post} type={postType} />
             ))
           : null}
-
-        {/* {posts.map((post, i) => (
-          <Cards key={i} post={post} type={postType} />
-        ))} */}
       </div>
     </main>
   );
