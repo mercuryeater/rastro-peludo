@@ -1,33 +1,10 @@
-"use client";
-import { useParams } from "next/navigation";
-import db from "@/db/db.json";
 import MobileHeader from "./Header/DetailsHeader";
 import Header from "@components/Header/Header";
 import s from "./Details.module.scss";
 import Image from "next/image";
 import useScreenSize from "@hooks/useScreenSize";
 
-function fetchPostDetails(petId) {
-  const seenPet = db.seen.find((pet) => parseInt(pet.id) === parseInt(petId));
-  if (seenPet) {
-    return seenPet;
-  }
-
-  // Si no se encuentra en "seen", busca en el arreglo "lost"
-  const lostPet = db.lost.find((pet) => parseInt(pet.id) === parseInt(petId));
-  if (lostPet) {
-    return lostPet;
-  }
-
-  return { error: "PetNotFound" };
-}
-
-export default function Details() {
-  const { postType, id } = useParams();
-  console.log(postType);
-
-  const pet = fetchPostDetails(id);
-
+export default function Details({ postType, pet }) {
   const screenSize = useScreenSize();
 
   function publishClue(event) {
@@ -36,6 +13,19 @@ export default function Details() {
     const formData = new FormData(event.target);
     const clue = Object.fromEntries(formData);
     console.log("Clue published: " + JSON.stringify(clue));
+  }
+
+  if (pet === "PetNotFound") {
+    return (
+      <div className={s.page}>
+        {screenSize.width < 481 ? <MobileHeader /> : <Header />}
+        <div className={s.content}>
+          <div className={s.title}>
+            <h1>Peludo no encontrado</h1>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   return (
