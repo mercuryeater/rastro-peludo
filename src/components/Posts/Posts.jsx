@@ -13,41 +13,6 @@ export default function Posts() {
     setPostType(event.target.value);
   };
 
-  const mockPosts = [
-    {
-      especie: "Perro",
-      foto: dog1,
-      color: "Blanco y café",
-      direccion: "Cra 19A # 127",
-      fecha: "25/11/2023",
-      hora: "10:30",
-    },
-    {
-      especie: "Perro",
-      foto: dog2,
-      color: "Café con blanco",
-      direccion: "Cll 126 # 30 - 25",
-      fecha: "20/11/2023",
-      hora: "17:10",
-    },
-    {
-      especie: "Perro",
-      foto: dog1,
-      color: "Blanco y café",
-      direccion: "Cra 19A # 127",
-      fecha: "25/11/2023",
-      hora: "10:30",
-    },
-    {
-      especie: "Perro",
-      foto: dog2,
-      color: "Café con blanco",
-      direccion: "Cll 126 # 30 - 25",
-      fecha: "20/11/2023",
-      hora: "17:10",
-    },
-  ];
-
   useEffect(() => {
     if (postType === "seen") {
       setPosts(db.seen);
