@@ -1,43 +1,25 @@
-import Image from "next/image";
+import { useState, useEffect } from "react";
+import Cards from "./Cards/Cards.jsx";
 import dog1 from "@assets/pets/dog1.jpg";
 import dog2 from "@assets/pets/dog2.jpg";
 import s from "./Posts.module.scss";
+import db from "@db/db.json";
 
 export default function Posts() {
-  const mockPosts = [
-    {
-      especie: "Perro",
-      foto: dog1,
-      color: "Blanco y café",
-      direccion: "Cra 19A # 127",
-      fecha: "25/11/2023",
-      hora: "10:30",
-    },
-    {
-      especie: "Perro",
-      foto: dog2,
-      color: "Café con blanco",
-      direccion: "Cll 126 # 30 - 25",
-      fecha: "20/11/2023",
-      hora: "17:10",
-    },
-    {
-      especie: "Perro",
-      foto: dog1,
-      color: "Blanco y café",
-      direccion: "Cra 19A # 127",
-      fecha: "25/11/2023",
-      hora: "10:30",
-    },
-    {
-      especie: "Perro",
-      foto: dog2,
-      color: "Café con blanco",
-      direccion: "Cll 126 # 30 - 25",
-      fecha: "20/11/2023",
-      hora: "17:10",
-    },
-  ];
+  const [postType, setPostType] = useState("");
+  const [posts, setPosts] = useState([]);
+
+  const handleInputChange = (event) => {
+    setPostType(event.target.value);
+  };
+
+  useEffect(() => {
+    if (postType === "seen") {
+      setPosts(db.seen);
+    } else if (postType === "lost") {
+      setPosts(db.lost);
+    }
+  }, [postType]);
 
   return (
     <main className={s.Content}>
@@ -49,8 +31,9 @@ export default function Posts() {
               className={s.Content__radio__input}
               type="radio"
               id="visto"
-              value="visto"
+              value="seen"
               name="postType"
+              onChange={handleInputChange}
             />
             <span className={s.Content__radio__checkmark} />
             Vistos
@@ -62,8 +45,9 @@ export default function Posts() {
               className={s.Content__radio__input}
               type="radio"
               id="perdido"
-              value="perdido"
+              value="lost"
               name="postType"
+              onChange={handleInputChange}
             />
             <span className={s.Content__radio__checkmark} />
             Perdidos
@@ -72,32 +56,11 @@ export default function Posts() {
       </div>
 
       <div className={s.Posts}>
-        {mockPosts.map((post, i) => (
-          <div className={s.Post} key={i}>
-            <Image
-              className={s.Post__img}
-              src={post.foto}
-              alt="a random dog"
-              width={500}
-              height={500}
-            />
-            <div className={s.Post__text}>
-              <span className={s.Post__specColor}>
-                <h3>
-                  {post.especie} - {post.color}
-                </h3>
-              </span>
-              <hr />
-              <h3 className={s.Post__address}>{post.direccion}</h3>
-              <hr />
-              <span className={s.Post__time}>
-                <h3>
-                  {post.fecha} - {post.hora}
-                </h3>
-              </span>
-            </div>
-          </div>
-        ))}
+        {posts
+          ? posts.map((post, i) => (
+              <Cards key={i} post={post} type={postType} />
+            ))
+          : null}
       </div>
     </main>
   );

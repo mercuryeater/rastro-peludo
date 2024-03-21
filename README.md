@@ -2,15 +2,26 @@
 
 ## ¿Qué es?
 
-Es una página web en dónde se podrán hacer publicaciones de animales pérdidos o vistos (y que parecen pérdidos), muchas veces los vemos y no podemos más que ayudarlos y acompañarlos temporalmente, sin mebargo, alguien puede estar trás su rastro y cada publicación puede ser de ayuda.
+Es una página web en dónde se podrán hacer publicaciones de animales pérdidos o vistos (y que parecen pérdidos), muchas veces los vemos y no podemos más que ayudarlos y acompañarlos temporalmente, sin embargo, alguien puede estar trás su rastro y cada publicación es una ayuda para que su familia esté más cerca de encontrarlo.
 
 Este es el repositorio Front End de este pryecto que es una buena práctica de Next pero podría hacerse un port a una app normal de React.
 
-Por ahora la página está desplegada en [render](https://rastro-peludo.onrender.com/)
+Por ahora la página está desplegada [AQUI](https://rastro-peludo.vercel.app/)
 
-Eso sí, este servicio en render hace que se demore en "despertarse" el servidor cuando no se está usando, pero después de 1 o 2 minutos ya funciona y se puede ver la página normalmente.
-A futuro estaría bien intentar hacer el despliegue en otra página como vercel o github pages para que no esté suspendida a la hora de utilizarla.
+Y el Back-End se encuentra en proceso, este es el [link](https://github.com/mercuryeater/back-rastro-peludo) al repositorio.
 
-...
+## What is it?
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a web page where you can make posts about lost or found animals (and those that appear to be lost). Often, we encounter these animals and can do no more than offer temporary help and companionship. However, someone might be searching for them, and each post brings them closer to reuniting with their family.
+
+This repository serves as the Front End for the project, demonstrating good practices using Next.js. It could potentially be ported to a regular React app.
+
+Currently, the page is deployed [HERE](https://rastro-peludo.vercel.app/)
+
+The Back-End is still in progress, and you can find it at this [link](https://github.com/mercuryeater/back-rastro-peludo).
+
+---
+
+#### Image attributions
+
+- Sad dog image for 404 --> Image by [vxtok in freepik](https://www.freepik.com/free-vector/little-pet-pug-dog-puppy-with-collar-collection-emoji-facial-expressions_3332114.htm#&position=0&from_view=search&track=ais&uuid=f33854d0-d3bb-4c95-88a7-d4d4c5caf403)

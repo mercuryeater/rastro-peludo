@@ -1,0 +1,279 @@
+@use "@styles/base";
+@import "@styles/mixins";
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+.container {
+  font-size: 20px;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    max-height: 490px;
+    object-fit: cover;
+  }
+
+  &__title {
+    padding: 0px 20px;
+    line-height: 0.8;
+
+    h1 {
+      margin: 16px 0px 0px 0px;
+    }
+  }
+
+  hr {
+    border: 0;
+    border-radius: 10px;
+    border-color: black;
+    background-color: black;
+    height: 1px;
+    margin: 10px 0px 15px 0px;
+  }
+
+  &__info {
+    padding: 0px 20px;
+
+    &__lostInfo {
+      p {
+        margin: 5px 0px;
+      }
+    }
+
+    &__pathInfo {
+      p {
+        margin: 5px 0px;
+      }
+
+      h2 {
+        margin: 0px;
+        line-height: 1;
+        font-size: 24px;
+      }
+    }
+
+    &__description {
+      h3 {
+        margin: 5px 0px;
+        font-size: 22px;
+      }
+
+      p {
+        margin: 0px;
+      }
+    }
+
+    &__contact {
+      h3 {
+        margin: 5px 0px;
+        font-size: 22px;
+      }
+
+      p {
+        margin: 5px 0px;
+      }
+    }
+  }
+
+  &__clues {
+    padding: 0px 20px;
+
+    h3 {
+      margin: 5px 0px;
+      font-size: 22px;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+
+      textarea {
+        font-family: inherit;
+        font-size: 20px;
+        background-color: base.$background;
+        border: 0;
+        border-radius: 5px;
+        padding: 2px;
+        resize: none;
+        height: 100px;
+        max-height: fit-content;
+
+        &:focus {
+          outline: 0px;
+        }
+
+        &::-webkit-scrollbar {
+          display: block;
+          width: 10px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: base.$primary-color; /* color of the tracking area */
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: base.$complement-color; /* color of the scroll thumb */
+          border-radius: 10px; /* roundness of the scroll thumb */
+        }
+      }
+
+      button {
+        font-family: inherit;
+        width: fit-content;
+        align-self: end;
+        background-color: base.$default-button;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: base.$default-button;
+        border: none;
+        border-radius: 16px;
+        padding: 15px 30px;
+        cursor: pointer;
+        color: white;
+        transition: all 800ms ease-in-out alternate;
+
+        &:hover {
+          background-color: base.$hover-button;
+        }
+
+        &:active {
+          background-color: base.$active-button;
+          transform: scale(0.95);
+        }
+      }
+    }
+  }
+}
+
+.footerIntersection {
+  min-height: 40px;
+  flex-grow: 1;
+  background: linear-gradient(0deg, base.$secondary-color, base.$background);
+}
+
+@media (min-width: 740px) {
+  .container {
+    &__info {
+      padding: 0 50px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+
+      &__lostInfo {
+        grid-column: 3/4;
+        grid-row: 1;
+      }
+
+      &__pathInfo {
+        grid-column: 1/2;
+        grid-row: 1;
+      }
+
+      &__description {
+        grid-column: 1/4;
+        grid-row: auto;
+      }
+
+      &__contact {
+        grid-column: 2/3;
+        grid-row: 1;
+      }
+
+      &__contactSeen {
+        grid-column: 3/4;
+      }
+    }
+
+    hr {
+      grid-column: 1 / 4;
+    }
+
+    &__title {
+      padding: 0 50px;
+    }
+
+    &__clues {
+      padding: 0px 50px;
+    }
+  }
+}
+
+@include Desktop() {
+  .container {
+    max-width: 1100px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 23px;
+    padding: 20px;
+
+    &__title {
+      padding-left: 5px;
+      grid-column: 1/2;
+      grid-row: 1/2;
+
+      hr {
+        display: none;
+      }
+    }
+
+    &__image {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      border-radius: 25px;
+      -webkit-box-shadow: 0px 7px 43px -20px rgba(18, 18, 18, 1);
+      -moz-box-shadow: 0px 7px 43px -20px rgba(18, 18, 18, 1);
+      box-shadow: 0px 7px 43px -20px rgba(18, 18, 18, 1);
+    }
+
+    &__info {
+      grid-row: 2/4;
+      align-content: start;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      padding: 20px 0px 0px 10px;
+
+      hr {
+        margin: 0;
+      }
+
+      &__pathInfo {
+        grid-column: 1/2;
+      }
+
+      &__contact {
+        grid-column: 2/3;
+      }
+
+      &__lostInfo {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        // margin: 50px 0px;
+        padding: 10px 0px;
+
+        hr {
+          margin-bottom: 15px;
+        }
+      }
+
+      &__description {
+        grid-column: 1/3;
+        grid-row: 3;
+      }
+    }
+
+    &__clues {
+      grid-row: 3/4;
+      padding: 5px;
+    }
+  }
+
+  .footerIntersection {
+    flex-grow: 1;
+  }
+}

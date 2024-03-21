@@ -1,0 +1,92 @@
+@use "@styles/base";
+@import "@styles/mixins";
+
+.Post {
+  cursor: pointer;
+  background-color: base.$background;
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  outline: 2px transparent solid;
+  width: 100%;
+  -webkit-box-shadow: 0px 3px 16px -3px rgba(240, 147, 240, 1);
+  -moz-box-shadow: 0px 3px 16px -3px rgba(240, 147, 240, 1);
+  box-shadow: 0px 3px 16px -3px base.$active-button;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    outline: 2px solid base.$complement-color;
+  }
+
+  &__name {
+    font-size: 25px;
+
+    h3 {
+      margin: 0px;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px 18px 0px 0px;
+    // max-width: 300px;
+    // max-height: 200px;
+  }
+
+  &__text {
+    padding: 17px 20px;
+  }
+
+  &__specColor {
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    gap: 8px;
+
+    h3 {
+      display: block;
+      font-weight: inherit;
+      margin: 0;
+    }
+  }
+
+  &__address {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0px;
+  }
+
+  &__time {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    gap: 8px;
+
+    h3 {
+      display: inline-block;
+      font-weight: inherit;
+      margin: 0;
+    }
+  }
+
+  hr {
+    border: 0;
+    border-radius: 10px;
+    border-color: black;
+    background-color: black;
+    height: 1px;
+    margin: 10px 0px 15px 0px;
+  }
+}
+
+@include Tablet() {
+  .Post {
+    &__img {
+      aspect-ratio: 1 / 1;
+    }
+  }
+}
