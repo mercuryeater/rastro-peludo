@@ -19,3 +19,9 @@ This repository serves as the Front End for the project, demonstrating good prac
 Currently, the page is deployed [HERE](https://rastro-peludo.vercel.app/)
 
 The Back-End is still in progress, and you can find it at this [link](https://github.com/mercuryeater/back-rastro-peludo).
+
+---
+
+#### Image attributions
+
+- Sad dog image for 404 --> Image by [vxtok in freepik](https://www.freepik.com/free-vector/little-pet-pug-dog-puppy-with-collar-collection-emoji-facial-expressions_3332114.htm#&position=0&from_view=search&track=ais&uuid=f33854d0-d3bb-4c95-88a7-d4d4c5caf403)
